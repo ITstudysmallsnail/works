@@ -1,0 +1,77 @@
+/* *******
+默认样式
+ ********* */
+body,a{padding: 0;margin: 0}
+a{text-decoration-line: none}
+
+
+
+/* *********
+主体样式
+ *********** */
+#index-main-mov-banner{
+    width: 590px;height: 470px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+.main-img{
+    height: 470px;width: calc(590*9px);
+    position: absolute;
+    z-index: 1;
+    /*left: calc(-590 * 1px);*/
+}
+.main-img a{
+    float: left;
+}
+
+.buttons{
+    z-index: 2;
+    position: absolute;width: 100%;
+    top: 50%;transform: translateY(-50%);
+    display: none;
+}
+.go-left,
+.go-right{
+    width: 25px;height: 40px;
+    background-color: rgba(0,0,0,.3);
+    text-align: center;line-height: 40px;
+    font-size: 20px;font-style: normal;
+    font-family: "宋体";
+    color: rgba(255,255,255,.3);
+}
+.go-left{
+    float: left;
+    position: absolute;
+}
+.go-right{
+    float: right;
+}
+#index-main-mov-banner:hover .buttons{
+    display: block;
+}
+.go-left:hover,
+.go-right:hover{
+    background-color: rgba(0,0,0,.5);
+    color: rgba(255,255,255,.9);
+}
+
+.main-small-circle{
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+    z-index: 3;
+}
+.circle{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid #f7f7f7;
+}
+/*.circle:hover,*/
+.circleChange{
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgba(255,255,255,.5);
+}
